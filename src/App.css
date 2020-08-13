@@ -1,8 +1,10 @@
 .App {
   background-size: cover;
   background-image: url("./img/firstpage.png") ;
-  height: 500px;
+  
 
+  /* height: 1080px;
+  width: 1920px; */
 }
   
 
