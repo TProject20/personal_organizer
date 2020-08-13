@@ -1,1 +1,21 @@
 
+body{
+    background-size: cover;
+    background-image: url("./img/firstpage.png") ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  
+  }
+
+  .hrLine{
+    position: relative;
+    top: 70px;
+  }
+  .orgYourDay{
+    color: grey;
+    text-align: center;
+    font-size: 50px;
+    position: relative;
+    top: 150px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }

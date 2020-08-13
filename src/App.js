@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './logo.svg';
+import GetStarted from './components/GetStarted'
 import './App.css';
 
 
@@ -7,8 +7,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      
-      
+      <GetStarted/>
     </div>
   );
 }
