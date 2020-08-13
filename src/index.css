@@ -19,3 +19,21 @@ body{
     top: 150px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
+
+  li{
+    display: inline;
+    border: 2px solid grey;
+    padding: 7px;
+    border-radius: 8px;
+    background: linear-gradient(360deg, rgba(37,81,226,1) 0%, rgba(2,25,34,1) 100%);
+    font-size: large;
+    margin: 3px;
+  }
+
+ul{
+  position: absolute;
+  right: 0px;
+  
+}
+
+

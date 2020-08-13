@@ -18,12 +18,15 @@ left: '560px'
 
 
 export default function GetStarted(){
+  const clickEx = () => {
+    alert('please sign up')
+  }
   return (
     <div>
           <hr className='hrLine'/>
          
           <h1 className='orgYourDay'>Organize Your Day</h1>
-          <Butt>Get Started</Butt>
+          <Butt onClick={clickEx}>Get Started</Butt>
     </div>
   )
   
