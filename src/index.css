@@ -1,39 +1,39 @@
-
-body{
-    background-size: cover;
-    background-image: url("./img/firstpage.png") ;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-  
-  }
-
-  .hrLine{
-    position: relative;
-    top: 70px;
-  }
-  .orgYourDay{
-    color: grey;
-    text-align: center;
-    font-size: 50px;
-    position: relative;
-    top: 150px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-  }
-
-  li{
-    display: inline;
-    border: 2px solid grey;
-    padding: 7px;
-    border-radius: 8px;
-    background: linear-gradient(360deg, rgba(37,81,226,1) 0%, rgba(2,25,34,1) 100%);
-    font-size: large;
-    margin: 3px;
-  }
-
-ul{
-  position: absolute;
-  right: 0px;
-  
+body {
+	background-size: cover;
+	background-image: url("./img/firstpage.png");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 }
 
+.hrLine {
+	position: relative;
+	top: 70px;
+}
+.orgYourDay {
+	color: grey;
+	text-align: center;
+	font-size: 50px;
+	position: relative;
+	top: 150px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
+li {
+	display: inline;
+	border: 2px solid grey;
+	padding: 7px;
+	border-radius: 8px;
+	background: linear-gradient(
+		360deg,
+		rgba(37, 81, 226, 1) 0%,
+		rgba(2, 25, 34, 1) 100%
+	);
+	font-size: large;
+  margin: 3px;
+  color: wheat
+}
+
+ul {
+	position: absolute;
+	right: 0px;
+}

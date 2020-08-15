@@ -5,11 +5,15 @@ import About from './components/About'
 import Signup from './components/Signup'
 import Signin from './components/Signin'
 import "./App.css";
+// import Calendar from "./calendar/Calendar";
+
 
 function App() {
 	return (
 		<Router>
 			<div className="App">
+				{/* <Calendar/> */}
+				
 				<ul>
 					<li>
 						<Link to="/signin">Sign in</Link>
@@ -35,7 +39,7 @@ function App() {
 					</Route>
 				</Switch>
 			</div>
-		</Router>
+		 </Router>
 	);
 }
 
