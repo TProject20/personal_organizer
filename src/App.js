@@ -11,6 +11,7 @@ function App() {
 		<Router>
 			<div className="App">
 				<ul>
+					<li> <Link to="/">Home</Link> </li>
 					<li>
 						<Link to="/signin">Sign in</Link>
 					</li>
@@ -21,14 +22,15 @@ function App() {
 						<Link to="/about">About</Link>
 					</li>
 				</ul>
-				<GetStarted />
+				
 				<Switch>
+					<Route path='/' exact component={GetStarted}/>
 					<Route path="/signin" component={Signin} />
 					<Route path="/signup" component={Signup} />
 					<Route path="/about" component={About} />
 				</Switch>
 			</div>
-		</Router>
+		 </Router>
 	);
 }
 

@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Signup() {
     return (
-        <div>
+        <div className='signup'>
             <h1 style={{color :'white'}}>Signup</h1>
             <input type='text' placeholder='name'/>
             <br/>
