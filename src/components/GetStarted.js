@@ -1,6 +1,7 @@
 import React from 'react'
 import Button from '@material-ui/core/Button';
 import {styled} from '@material-ui/styles'
+import { Link } from 'react-router-dom';
 
 const Butt = styled(Button)({
 height: "50px",
@@ -18,15 +19,13 @@ left: '560px'
 
 
 export default function GetStarted(){
-  const clickEx = () => {
-    alert('please sign up')
-  }
-  return (
+  
+    return (
     <div>
           <hr className='hrLine'/>
          
           <h1 className='orgYourDay'>Organize Your Day</h1>
-          <Butt onClick={clickEx}>Get Started</Butt>
+          <Butt> <a href='/signin'>Get Started</a></Butt>
     </div>
   )
   
