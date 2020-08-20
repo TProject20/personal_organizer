@@ -1,24 +1,24 @@
 body {
-	background-size: cover;
-	background-image: url("./img/firstpage.png");
-	background-repeat: no-repeat;
-	background-attachment: fixed;
+  background-size: cover;
+  background-image: url("./img/firstpage.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .hrLine {
-	position: relative;
-	top: 70px;
+  position: relative;
+  top: 70px;
 }
 .orgYourDay {
-	color: grey;
-	text-align: center;
-	font-size: 50px;
-	position: relative;
-	top: 150px;
-	font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: grey;
+  text-align: center;
+  font-size: 50px;
+  position: relative;
+  top: 150px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-li {
+.menu-li {
 	display: inline;
 	border: 2px solid grey;
 	padding: 7px;
@@ -33,14 +33,14 @@ li {
   color: wheat
 }
 
-ul {
+.menu-bar {
 	position: absolute;
 	right: 0px;
 }
 
-.signin , .signup{
-	border: 2px solid gray;
-	padding: 5px;
-	width: 200px;
-	
+.signin,
+.signup {
+  border: 2px solid gray;
+  padding: 5px;
+  width: 200px;
 }
