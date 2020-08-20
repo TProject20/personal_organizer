@@ -1,10 +1,10 @@
 body {
+
   background-size: cover;
   background-image: url("./img/firstpage.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-
 .hrLine {
   position: relative;
   top: 70px;
@@ -20,7 +20,7 @@ body {
 
 .menu-li {
 	display: inline;
-	border: 2px solid grey;
+	/* border: 2px solid grey; */
 	padding: 7px;
 	border-radius: 8px;
 	background: linear-gradient(
@@ -38,9 +38,24 @@ body {
 	right: 0px;
 }
 
+
 .signin,
 .signup {
   border: 2px solid gray;
   padding: 5px;
   width: 200px;
 }
+
+.MuiButton-containedSecondary{
+	background-color: #1f4270 !important;
+}
+.HomePage-avatar-3{
+	background-color:  #1f4270 !important;
+}
+.Register-avatar-3{
+	background-color:  #1f4270 !important;
+}
+.SignIn-avatar-3{
+	background-color:  #1f4270 !important;
+}
+
