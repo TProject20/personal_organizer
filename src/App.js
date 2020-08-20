@@ -1,13 +1,5 @@
 
-
-// import { Header } from "./Expense/Header";
-// import { Balance } from "./Expense/Balance";
-// import { IncomeExpenses } from "./Expense/IncomeExpenses";
-// import './exp.css';
-
-
 import React, { useState, useEffect } from 'react'
-
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import GetStarted from "./components/GetStarted";
 import Register from "./components/Register/index"
@@ -18,6 +10,7 @@ import "./App.css";
 import firebase from "./components/firebase";
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles'
 import { CssBaseline, CircularProgress } from '@material-ui/core'
+import About from './components/About'
 
 
 const theme = createMuiTheme()
@@ -47,6 +40,8 @@ export default function App() {
 						<Route path="/register" component={Register} />
 						<Route path="/signin" component={Login} />
 						<Route path="/dashboard" component={Dashboard} />
+						<Route path="/about" component={About} />
+
 
 					</Switch>
 				</div>
