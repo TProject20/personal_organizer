@@ -2,6 +2,8 @@ import firebase from "firebase/app";
 import 'firebase/auth'
 import 'firebase/firebase-firestore'
 
+
+
  const config = {
     apiKey: "AIzaSyAcqHLK4oYdRVUeptm1wzaLKzmB1z2_dfk",
     authDomain: "personal-organizer-c42b3.firebaseapp.com",

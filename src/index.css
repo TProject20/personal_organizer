@@ -1,14 +1,70 @@
+html,
 body {
+  height: 100%;
+}
 
-  background-size: cover;
-  background-image: url("./img/firstpage.png");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+body {
+  /* background-size: cover; */
+  background-color: #051429 !important;
+  display: block;
+  min-height: inherit;
+  /* background-repeat: no-repeat;
+	background-attachment: fixed; */
 }
-.hrLine {
-  position: relative;
-  top: 70px;
+
+.center {
+  max-width: 1000px;
+  margin: 0 auto;
 }
+
+.menu-box {
+  box-sizing: border-box;
+  border-bottom: 2px solid #ffffff;
+  display: flex;
+  justify-content: space-between;
+  height: 140px;
+  padding: 20px 0;
+}
+
+.menu-box__left {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-box__logo {
+  display: block;
+  margin-right: 40px;
+}
+
+.menu-box__logo-img {
+  max-width: 104px;
+}
+
+.menu__list {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.menu__list_reg {
+  list-style-type: none;
+  display: flex;
+}
+.menu__item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.menu__link {
+  display: block;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 20px;
+}
+.menu-box__right {
+  display: flex;
+  justify-content: space-between;
+}
+
 .orgYourDay {
   color: grey;
   text-align: center;
@@ -18,35 +74,8 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.menu-li {
-	display: inline;
-	/* border: 2px solid grey; */
-	padding: 7px;
-	border-radius: 8px;
-	background: linear-gradient(
-		360deg,
-		rgb(218, 219, 223) 0%,
-		rgb(167, 176, 180) 100%
-	);
-	font-size: large;
-  margin: 3px;
-  color: wheat
-}
-
-.menu-bar {
-	position: absolute;
-	right: 0px;
-}
-
-
-.signin,
-.signup {
-  border: 2px solid gray;
-  padding: 5px;
-  width: 200px;
-}
-
-.MuiButton-containedSecondary{
+/* .MuiButton-containedSecondary{
+>>>>>>> hooks-form
 	background-color: #1f4270 !important;
 }
 .HomePage-avatar-3{
@@ -57,5 +86,5 @@ body {
 }
 .SignIn-avatar-3{
 	background-color:  #1f4270 !important;
-}
 
+} */
