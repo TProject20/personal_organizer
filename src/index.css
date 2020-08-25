@@ -65,14 +65,14 @@ body {
   justify-content: space-between;
 }
 
-/* .orgYourDay {
+.orgYourDay {
   color: grey;
   text-align: center;
   font-size: 50px;
   position: relative;
   top: 150px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-} */
+}
 
 /* .MuiButton-containedSecondary{
 >>>>>>> hooks-form
