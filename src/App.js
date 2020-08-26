@@ -14,9 +14,8 @@ import firebase from "./components/firebase";
 import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles";
 import { CssBaseline, CircularProgress } from "@material-ui/core";
 import List from "./TodoList/List";
-import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles'
-import { CssBaseline, CircularProgress } from '@material-ui/core'
 import About from './components/About'
+
 
 
 const theme = createMuiTheme();
@@ -31,6 +30,7 @@ export default function App() {
 	});
 
 	return firebaseInitialized !== false ? (
+		
 		<MuiThemeProvider theme={theme}>
 			<CssBaseline />
 			<Router>
@@ -47,11 +47,15 @@ export default function App() {
 				</div>
 			</Router>
 		</MuiThemeProvider>
+		
 	) : (
+
 		<div id="loader">
 			<CircularProgress />
 		</div>
+		
 	);
+
 }
 // class App extends Component {
 // 	constructor(){

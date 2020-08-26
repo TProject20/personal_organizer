@@ -13,7 +13,7 @@ export default function About() {
   return (
     <GlobalProvider>
       <Header />
-      <div className="container">
+      <div className="exp-container">
         <Balance />
         <IncomeExpenses />
         <TransActionList />

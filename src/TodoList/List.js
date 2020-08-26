@@ -13,11 +13,13 @@ export default function List() {
 		<AlertState>
 			<div>
 				<div className="container pt-4">
+					
 					<h1 className="bg-dark text-muted">Todo List</h1>
 					<Alert />
 					<Form />
 					<hr />
 					<Notes notes={notes} />
+					
 				</div>
 			</div>
 		</AlertState>
