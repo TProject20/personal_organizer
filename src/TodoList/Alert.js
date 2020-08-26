@@ -15,7 +15,7 @@ export const Alert = () => {
 				className={`alert alert-${alert.type || "warning"} alert-dismissible`}
 			>
 				<strong>Warning!!!!!</strong>
-				 {alert.text}
+				&nbsp;{alert.text}
 				<button
 					onClick={hide}
 					type="button"
