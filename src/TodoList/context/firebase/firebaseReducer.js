@@ -1,4 +1,4 @@
-import { SHOW_LOADER, REMOVE_NOTES, FETCH_NOTES, ADD_NOTE } from "../types";
+import { ADD_NOTE, FETCH_NOTES , REMOVE_NOTES ,SHOW_LOADER } from "../types";
 const handlers = {
 	[SHOW_LOADER]: (state) => ({ ...state, loading: true }),
 	[ADD_NOTE]: (state, { payload }) => ({

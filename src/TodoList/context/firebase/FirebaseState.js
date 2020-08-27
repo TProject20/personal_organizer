@@ -5,6 +5,7 @@ import { firebaseReducer } from "./firebaseReducer";
 import { SHOW_LOADER, REMOVE_NOTES } from "../types";
 
 const url = process.env.REACT_APP_DB_URL;
+// const  url = 'https://personal-organizer-c42b3.firebaseio.com'
 
 export const FirebaseState = ({ children }) => {
 	const initialState = {
@@ -38,9 +39,14 @@ export const FirebaseState = ({ children }) => {
 
 	return (
 		<FirebaseContext.Provider value={{
-            showLoader,addNote,removeNote,fetchNotes,
+			showLoader,
+			addNote,
+			removeNote,
+			fetchNotes,
             loading: state.loading,
             notes: state.notes
-        }}>{children}</FirebaseContext.Provider>
+        }}>
+			{children}
+			</FirebaseContext.Provider>
 	);
 };
