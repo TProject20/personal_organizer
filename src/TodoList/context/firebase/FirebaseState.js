@@ -5,7 +5,7 @@ import { firebaseReducer } from "./firebaseReducer";
 import { SHOW_LOADER, REMOVE_NOTES, ADD_NOTE, FETCH_NOTES } from "../types";
 
 // const url = process.env.REACT_APP_DB_URL;
-const  url = 'https://personal-organizer-c42b3.firebaseio.com'
+const url = "https://personal-organizer-c42b3.firebaseio.com";
 
 export const FirebaseState = ({ children }) => {
 	const initialState = {
@@ -17,25 +17,26 @@ export const FirebaseState = ({ children }) => {
 	const fetchNotes = async () => {
 		showLoader();
 		const res = await axios.get(`${url}/notes.json`);
-		const payload = Object.keys(res.data).map(key => {
+		const payload = Object.keys(res.data).map((key) => {
 			return {
 				...res.data[key],
-				id: key
-			}
-		})
-		dispatch({	type: FETCH_NOTES, payload})
+				id: key,
+			};
+		});
+		dispatch({ type: FETCH_NOTES, payload });
 	};
 	const addNote = async (title) => {
 		const note = {
-			title, date: new Date().toJSON(),
+			title,
+			date: new Date().toJSON(),
 		};
 		try {
 			const res = await axios.post(`${url}/notes.json`, note);
 			const payload = {
 				...note,
-				id: res.data.name
-			}
-			dispatch({type: ADD_NOTE,payload})
+				id: res.data.name,
+			};
+			dispatch({ type: ADD_NOTE, payload });
 		} catch (error) {
 			throw new Error(error.message);
 		}

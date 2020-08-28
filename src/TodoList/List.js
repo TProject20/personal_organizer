@@ -1,14 +1,14 @@
 import React, { useContext, useEffect } from "react";
-import "./style.scss";
 import { Form } from "./Form";
 import { Notes } from "./Notes";
 import { Alert } from "./Alert";
 import { AlertState } from "./context/alert/AlertState";
 import { FirebaseContext } from "./context/firebase/firebaseContext";
 import { Loader } from "./Loader";
+// import "./style.scss";
 
 export default function List() {
- const {loading, notes, fetchNotes} = useContext(FirebaseContext);
+ const {loading, notes, fetchNotes, removeNote} = useContext(FirebaseContext);
 
 	useEffect(() => {
 		fetchNotes();
@@ -25,7 +25,7 @@ export default function List() {
 						<Form />
 						
 						<hr />
-						{loading ? <Loader /> : <Notes notes={notes} />}
+						{loading ? <Loader /> : <Notes notes={notes} onRemove={removeNote}/>}
 						
 					</div>
 				</div>
