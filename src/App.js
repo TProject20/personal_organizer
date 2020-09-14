@@ -13,7 +13,7 @@ import "./App.css";
 import firebase from "./components/firebase";
 import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles";
 import { CssBaseline, CircularProgress } from "@material-ui/core";
-import List from "./TodoList/List";
+import TodoApp from "./TodoList/TodoApp";
 import About from './components/About'
 
 
@@ -41,7 +41,7 @@ export default function App() {
 						<Route path="/register" component={Register} />
 						<Route path="/signin" component={Login} />
 						<Route path="/dashboard" component={Dashboard} />
-						<Route path="/list" component={List} />
+						<Route path="/list" component={TodoApp} />
 						<Route path="/about" component={About} />
 					</Switch>
 				</div>
